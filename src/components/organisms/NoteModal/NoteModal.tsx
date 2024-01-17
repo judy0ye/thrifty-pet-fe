@@ -30,11 +30,21 @@ export const NoteModal = ({
     description: ''
   });
   const [editClicked, setEditClicked] = useState(false);
+  const [alert, setAlert] = useState<string | null>(null);
+
+  const isFormIncomplete = () => {
+    return Object.values(editedNote).some((input) => input === '');
+  };
 
   const editNote = async (noteId: string, updatedNote: object) => {
     try {
+      if (isFormIncomplete()) {
+        setAlert('Please fill out all input fields');
+      } else {
+        return;
+      }
       await patchNote(noteId, updatedNote);
-      const updatedNotes = (notes??[]).map((note) => {
+      const updatedNotes = (notes ?? []).map((note) => {
         if (note._id === noteId) {
           setSelectedNote({ ...note, ...updatedNote });
           return { ...note, ...updatedNote };
@@ -53,6 +63,7 @@ export const NoteModal = ({
   const handleChange: React.ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement
   > = (e) => {
+    setAlert(null);
     const { name, value } = e.target;
 
     if (selectedNote) {
@@ -113,7 +124,7 @@ export const NoteModal = ({
                 </Button>
               </Menu.Target>
               <Menu.Dropdown>
-                <Menu.Label aria-label='Edit or Delete'></Menu.Label>
+                <Menu.Label aria-label="Edit or Delete"></Menu.Label>
                 <Menu.Item
                   onClick={handleEditClick}
                   leftSection={
@@ -180,12 +191,20 @@ export const NoteModal = ({
             </Box>
           )}
           {editClicked && (
-            <Group justify="space-between">
-              <Button onClick={() => setEditClicked(false)}>Cancel Edit</Button>
-              <Button onClick={() => selectedNote && editNote(selectedNote._id, editedNote)}>
-                Save Edit
-              </Button>
-            </Group>
+            <Stack>
+              <Group justify="space-between">
+                <Button onClick={() => setEditClicked(false)}>
+                  Cancel Edit
+                </Button>
+                <Button
+                  onClick={() =>
+                    selectedNote && editNote(selectedNote._id, editedNote)
+                  }>
+                  Save Edit
+                </Button>
+              </Group>
+              <Text>{alert}</Text>
+            </Stack>
           )}
         </Modal.Body>
       </Modal.Content>
