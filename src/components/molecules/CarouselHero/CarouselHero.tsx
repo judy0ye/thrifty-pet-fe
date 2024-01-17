@@ -1,15 +1,16 @@
 import { Carousel } from '@mantine/carousel';
 import Image from 'next/image';
+// import { Image } from '@mantine/core';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Flex, Text } from '@mantine/core';
 import classes from './CarouselHero.module.css';
 
 const images = [
-  { img: '/assets/dog-cat.jpg', alt: 'dog and cat' },
-  { img: '/assets/bunny.jpg', alt: 'bunny' },
-  { img: '/assets/guinea-pig.jpg', alt: 'guinea_pig' },
-  { img: '/assets/food.jpg', alt: 'dry pet food' }
+  { img: '/assets/dog-cat.jpeg', blur: './assets/dog-cat-low-quality.jpg', alt: 'dog and cat' },
+  { img: '/assets/bunny.jpg', blur: './assets/bunny-low-quality.jpg', alt: 'bunny' },
+  { img: '/assets/guinea-pig.jpeg', blur: './assets/guinea-pig-low-quality.jpg', alt: 'guinea_pig' },
+  { img: '/assets/food.jpeg', blur: './assets/food-low-quality.jpg', alt: 'dry pet food' }
 ];
 
 export const CarouselHero = () => {
@@ -22,6 +23,8 @@ export const CarouselHero = () => {
           Get the Best Prices for Your Fur Babies
         </Text>
         <Image
+          placeholder='blur'
+          blurDataURL={image.blur}
           className={classes.carouselImage}
           src={image.img}
           alt={image.alt}

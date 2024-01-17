@@ -67,7 +67,7 @@ export function Notes() {
       <Button  onClick={() => {openViewNotes(); setSelectedNote(note)}}  variant="default">
         {note.product}
       </Button>
-    </Stack>
+    </Stack>,
   )
 
   return(
@@ -125,7 +125,12 @@ export function Notes() {
           setSelectedNote={setSelectedNote}
         />
       )}
-      <Skeleton  h={36} mt="sm" visible={loading} animate={false} />
+      <Skeleton  h={36} mt="sm" visible={loading} animate={true} />
+      {loading && Array(notes?.length)
+            .fill(0)
+            .map((_, index) => (
+              <Skeleton key={index} h={34} mt="sm" visible={loading} animate={true} />
+      ))} 
     </>
   );
 }
