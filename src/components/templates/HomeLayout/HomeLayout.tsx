@@ -15,7 +15,7 @@ export const HomeLayout = ({children}: HomeLayoutTypes) => {
       header={{height: { base: 200, xs: 150, sm: 100 }}}
       navbar={{
         width: {base: 225, md: 250},
-        breakpoint: 'xs',
+        breakpoint: 'sm',
         collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
       }}
     >
