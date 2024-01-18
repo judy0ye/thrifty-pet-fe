@@ -12,19 +12,23 @@
 }
 
 .carouselImage {
-  @media (max-width: $mantine-breakpoint-md) {
+  @media (max-width: $mantine-breakpoint-lg) {
     width: 700px;
     height: 350px;
   }
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    width: 500px;
-    height: 250px;
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 600px;
+    height: 300px;
   }
 
   @media (max-width: $mantine-breakpoint-sm) {
     width: 400px;
-    height: 200px;
+    height: 250px;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 300px;
+    height: 175px;
   }
 }
 
