@@ -31,7 +31,7 @@ export const NoteModal = ({
   });
   const [editClicked, setEditClicked] = useState(false);
   const [alert, setAlert] = useState<string | null>(null);
-
+  console.log({selectedNote})
   const isFormIncomplete = () => {
     return Object.values(editedNote).some((input) => input === '');
   };
@@ -40,21 +40,20 @@ export const NoteModal = ({
     try {
       if (isFormIncomplete()) {
         setAlert('Please fill out all input fields');
-      } else {
-        return;
+      } else { 
+        await patchNote(noteId, updatedNote);
+        const updatedNotes = (notes ?? []).map((note) => {
+          if (note._id === noteId) {
+            setSelectedNote({ ...note, ...updatedNote });
+            return { ...note, ...updatedNote };
+          } else {
+            return note;
+          }
+        });
+ 
+        setNotes(updatedNotes);
+        setEditClicked(false);
       }
-      await patchNote(noteId, updatedNote);
-      const updatedNotes = (notes ?? []).map((note) => {
-        if (note._id === noteId) {
-          setSelectedNote({ ...note, ...updatedNote });
-          return { ...note, ...updatedNote };
-        } else {
-          return note;
-        }
-      });
-
-      setNotes(updatedNotes);
-      setEditClicked(false);
     } catch (error) {
       console.log(`${(error as Error).message}: Something went wrong`);
     }
