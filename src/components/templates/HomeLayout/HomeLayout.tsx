@@ -6,13 +6,13 @@ import Search from "@/components/molecules/Search";
 import CarouselHero from "@/components/molecules/CarouselHero";
 import Notes from "@/components/organisms/Notes";
 
-export const HomeLayout = ({children}: HomeLayoutTypes) => {
+export const HomeLayout = ({children, addProduct}: HomeLayoutTypes) => {
   const [mobileOpened, toggleMobile] = useDisclosure();
   const [desktopOpened, toggleDesktop ] = useDisclosure(true);
 
   return (
     <AppShell
-      header={{height: { base: 200, xs: 150, sm: 100 }}}
+      header={{height: { base: 200, xs: 150, sm: 125 }}}
       navbar={{
         width: {base: 225, md: 250},
         breakpoint: 'sm',
@@ -31,13 +31,13 @@ export const HomeLayout = ({children}: HomeLayoutTypes) => {
             toggleMobile={toggleMobile.toggle}
             toggleDesktop={toggleDesktop.toggle}
           />
-          <Search />
+          <Search addProduct={addProduct}/>
         </Flex>
       </AppShell.Header>
       <AppShell.Navbar>
         <Notes />
       </AppShell.Navbar>
-      <AppShellMain>
+      <AppShellMain >
         <CarouselHero />
         {children}
       </AppShellMain>

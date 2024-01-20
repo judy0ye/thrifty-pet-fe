@@ -1,0 +1,200 @@
+{
+  "products": [
+      {
+          "_id": "65aa12cec9302d8ee5262ce3",
+          "url": "https://www.chewy.com/revolution-plus-topical-solution-cats/dp/185730",
+          "image": "https://image.chewy.com/is/image/catalog/158995_MAIN._AC_SL600_V1549053720_.jpg",
+          "title": "Revolution Plus Topical Solution for Cats, 5.6-11 lbs, (Orange Box)",
+          "currentPrice": 144.98,
+          "originalPrice": null,
+          "miscInfo": [
+              "Pet Weight: 5.6-11 lbs",
+              "Count: 6 Doses (6-mos. supply)"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T06:12:30.247Z",
+          "updatedAt": "2024-01-19T06:12:30.247Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aa14130621b27f24ddc3ae",
+          "url": "https://www.chewy.com/frisco-lavender-fields-scented/dp/169544",
+          "image": "https://image.chewy.com/is/image/catalog/142651_MAIN._AC_SL600_V1657655544_.jpg",
+          "title": "Frisco Lavender Fields Scented Clumping Clay Cat Litter, 40-lb bag",
+          "currentPrice": 17.99,
+          "originalPrice": null,
+          "miscInfo": [
+              "Scent: Lavender Fields",
+              "Size: 40-lb bag"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T06:17:55.399Z",
+          "updatedAt": "2024-01-19T06:17:55.399Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aae629fc5e95358a93b9e1",
+          "url": "https://www.chewy.com/frisco-cat-face-non-skid-ceramic-cat/dp/282560",
+          "image": "https://image.chewy.com/is/image/catalog/256101_MAIN._AC_SL600_V1615321300_.jpg",
+          "title": "Frisco Cat Face Non-skid Ceramic Cat Dish, Blue, 0.5 cup, 1 count",
+          "currentPrice": 6.91,
+          "originalPrice": 7.68,
+          "miscInfo": [],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T21:14:17.652Z",
+          "updatedAt": "2024-01-19T21:14:17.652Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aae780fc5e95358a93b9f5",
+          "url": "https://www.chewy.com/equus-magnificus-german-horse-muffin/dp/226451",
+          "image": "https://image.chewy.com/is/image/catalog/199826_MAIN._AC_SL600_V1568844121_.jpg",
+          "title": "Equus Magnificus The German Horse Muffin Molasses Horse Treats",
+          "currentPrice": 69.99,
+          "originalPrice": null,
+          "miscInfo": [
+              "Size: 14-lb bucket"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T21:20:00.551Z",
+          "updatedAt": "2024-01-19T21:20:00.551Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aae8d3fc5e95358a93b9fc",
+          "url": "https://www.chewy.com/milk-bone-soft-chewy-beef-filet/dp/127416",
+          "image": "https://image.chewy.com/is/image/catalog/99876_MAIN._AC_SL600_V1668733058_.jpg",
+          "title": "Milk-Bone Soft & Chewy Beef & Filet Mignon Recipe Dog Treats",
+          "currentPrice": 14.48,
+          "originalPrice": null,
+          "miscInfo": [
+              "Flavor: Beef & Filet Mignon",
+              "Size: 25-oz tub"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T21:25:39.756Z",
+          "updatedAt": "2024-01-19T21:25:39.756Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aaeb0efc5e95358a93ba0c",
+          "url": "https://www.chewy.com/natures-recipe-grain-free-salmon/dp/36660",
+          "image": "https://image.chewy.com/is/image/catalog/51505_MAIN._AC_SL600_V1672782375_.jpg",
+          "title": "Nature's Recipe Grain-Free Salmon, Sweet Potato & Pumpkin Recipe Dry Dog Food",
+          "currentPrice": 49.66,
+          "originalPrice": 49.99,
+          "miscInfo": [
+              "Flavor: Salmon, Sweet Potato & Pumpkin",
+              "Size: 24-lb bag"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T21:35:10.754Z",
+          "updatedAt": "2024-01-19T21:36:05.374Z",
+          "__v": 0,
+          "averagePrice": 0,
+          "highestPrice": 49.66,
+          "lowestPrice": 49.66
+      },
+      {
+          "_id": "65aaef98fc5e95358a93ba25",
+          "url": "https://www.chewy.com/sungrow-coconut-fiber-rabbit-guinea/dp/667230",
+          "image": "https://image.chewy.com/is/image/catalog/304749_MAIN._AC_SL600_V1623177447_.jpg",
+          "title": "SunGrow Coconut Fiber Rabbit & Guinea Pigs Chew & Exercise Balls Teeth Grinding Treat",
+          "currentPrice": 7.97,
+          "originalPrice": 7.99,
+          "miscInfo": [
+              "Count: 3 count"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T21:54:32.835Z",
+          "updatedAt": "2024-01-19T21:54:32.835Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aaf0c8fc5e95358a93ba30",
+          "url": "https://www.chewy.com/blue-buffalo-life-protection-formula/dp/28801",
+          "image": "https://image.chewy.com/is/image/catalog/46860_MAIN._AC_SL600_V1689357704_.jpg",
+          "title": "Blue Buffalo Life Protection Formula Adult Chicken & Brown Rice Recipe Dry Dog Food",
+          "currentPrice": 37.65,
+          "originalPrice": 41.99,
+          "miscInfo": [
+              "Flavor: Chicken & Brown Rice",
+              "Size: 15-lb bag"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T21:59:36.572Z",
+          "updatedAt": "2024-01-19T21:59:36.572Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aaf275fc5e95358a93ba39",
+          "url": "https://www.chewy.com/simparica-trio-chewable-tablet-dogs/dp/251351",
+          "image": "https://image.chewy.com/is/image/catalog/224823_MAIN._AC_SL600_V1583503097_.jpg",
+          "title": "Simparica Trio Chewable Tablet for Dogs, 44.1-88 lbs, (Green Box)",
+          "currentPrice": 195.48,
+          "originalPrice": null,
+          "miscInfo": [
+              "Pet Weight: 44.1-88 lbs",
+              "Count: 6 Chewable Tablets (6-mos. supply)"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T22:06:45.936Z",
+          "updatedAt": "2024-01-19T22:06:45.936Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aaf51efc5e95358a93ba49",
+          "url": "https://www.chewy.com/tiny-tiger-pate-beef-poultry-recipes/dp/168784",
+          "image": "https://image.chewy.com/is/image/catalog/141887_Main._AC_SL600_V1558459927_.jpg",
+          "title": "Tiny Tiger Pate Beef & Poultry Recipes Variety Pack Grain-Free Canned Cat Food",
+          "currentPrice": 17.99,
+          "originalPrice": null,
+          "miscInfo": [
+              "Flavor: Variety Pack: Beef & Poultry",
+              "Size: 3-oz can, case of 24"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T22:18:06.920Z",
+          "updatedAt": "2024-01-19T22:18:06.920Z",
+          "__v": 0
+      },
+      {
+          "_id": "65aaf627fc5e95358a93ba56",
+          "url": "https://www.chewy.com/heartgard-plus-chew-dogs-26-50-lbs/dp/173232",
+          "image": "https://image.chewy.com/is/image/catalog/146389_MAIN._AC_SL600_V1669834807_.jpg",
+          "title": "Heartgard Plus Chew for Dogs, 26-50 lbs, (Green Box)",
+          "currentPrice": 59.49,
+          "originalPrice": 66.19,
+          "miscInfo": [
+              "Pet Weight: 26-50 lbs",
+              "Count: 6 Chews (6-mos. supply)"
+          ],
+          "default": [],
+          "priceHistory": [],
+          "users": [],
+          "createdAt": "2024-01-19T22:22:31.562Z",
+          "updatedAt": "2024-01-19T22:22:31.562Z",
+          "__v": 0
+      }
+  ]
+}

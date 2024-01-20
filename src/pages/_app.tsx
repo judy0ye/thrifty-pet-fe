@@ -6,7 +6,10 @@ import { Button, createTheme, MantineProvider } from '@mantine/core';
 import HomeLayout from '@/components/templates/HomeLayout';
 import { useRouter } from 'next/router';
 import ProductLayout from '@/components/templates/ProductLayout';
-import { ReactNode } from 'react';
+import { useEffect, useState } from 'react';
+import { getAllProducts } from './api/productCalls';
+import { LayoutSwitcherType, PetProduct } from './types';
+import mockData from '../../mockData.json'
 
 const theme = createTheme({
   components: {
@@ -18,20 +21,39 @@ const theme = createTheme({
   },
 });
 
-const LayoutSwitcher = ({children}: {children: ReactNode}) => {
+const LayoutSwitcher: React.FC<LayoutSwitcherType> = ({children, addProduct}) => {
   const router = useRouter()
 
   if (router.pathname.startsWith('/product')) {
     return <ProductLayout>{children}</ProductLayout>
   }
-  return <HomeLayout>{children}</HomeLayout>
+  return <HomeLayout addProduct={addProduct} >{children}</HomeLayout>
 }
 
 const App = ({ Component, pageProps }: AppProps) => {
+  const [products, setProducts] = useState<PetProduct[] | null>([])
+console.log('products in App:', products)
+  useEffect(() => {
+    const getProducts = async () => {
+      try{
+        // const allProducts = await getAllProducts()
+        setProducts(mockData.products)
+        // setProducts(allProducts.products)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getProducts()
+  }, [])
+
+  const addProduct = (newProduct: PetProduct) => {
+    setProducts([...(products || []), newProduct])
+  }
+
   return (
     <MantineProvider theme={theme}>
-      <LayoutSwitcher>
-        <Component {...pageProps} />
+      <LayoutSwitcher addProduct={addProduct}>
+        <Component {...pageProps} products={products} />
       </LayoutSwitcher>
     </MantineProvider>
   );
