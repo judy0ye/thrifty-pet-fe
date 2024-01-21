@@ -4,7 +4,6 @@ const postProduct = async (productUrl: string) => {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
        body: JSON.stringify({productUrl})
-      // body: JSON.stringify(productUrl)
     })
     if (!res.ok) {
       throw new Error (`${res.status}: Failed to post product link`)
@@ -27,11 +26,11 @@ const getAllProducts = async () => {
   }
 }
 
-const getProductById = async (productId) => {
+const getProductById = async (productId: string) => {
   try {
     const res = await fetch(`http://localhost:8080/api/v1/products/get/${productId}`)
     if (!res.ok) {
-      throw new Error (`${res.status}: Failed to get all products`)
+      throw new Error (`${res.status}: Failed to get product by id`)
     }
     return res.json()
   } catch (error) {
