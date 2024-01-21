@@ -1,6 +1,7 @@
 import {
   Button,
   Modal,
+  ScrollArea,
   Skeleton,
   Stack,
   Text,
@@ -96,8 +97,8 @@ export function Notes() {
   ));
 
   return (
-    <>
-      <Button onClick={open}>Add Notes</Button>
+    <ScrollArea>
+      <Button fullWidth onClick={open}>Add Notes</Button>
       <Modal
         opened={opened}
         onClose={() => {
@@ -162,6 +163,6 @@ export function Notes() {
               animate={true}
             />
           ))}
-    </>
+    </ScrollArea>
   );
 }
