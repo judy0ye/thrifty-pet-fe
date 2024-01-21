@@ -11,9 +11,7 @@ export interface PetProduct {
   currentPrice: number;
   originalPrice?: number | null;
   miscInfo: string[];
-  default: any[];
   priceHistory: PriceHistoryItem[];
-  users: any[];
   createdAt: string;
   updatedAt: string;
   __v: number;

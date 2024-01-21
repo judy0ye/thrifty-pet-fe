@@ -1,11 +1,7 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import { Container } from '@mantine/core'
 import ProductCards from '@/components/organisms/ProductCards'
 import { PetProduct } from './types'
-
-const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({products}: {products: PetProduct[]}) => {
   return (
@@ -16,7 +12,7 @@ const Home = ({products}: {products: PetProduct[]}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container fluid className={`${styles.Container} ${inter.className}`}>
+      <Container fluid >
         <ProductCards products={products} />
       </Container>
     </>

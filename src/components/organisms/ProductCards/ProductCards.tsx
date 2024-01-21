@@ -1,11 +1,4 @@
-import {
-  Anchor,
-  Card,
-  Flex,
-  Group,
-  Image,
-  Text,
-} from '@mantine/core';
+import { Anchor, Card, Flex, Group, Image, Text } from '@mantine/core';
 import Link from 'next/link';
 import { PetProduct } from '@/pages/types';
 import { useRef, useState } from 'react';
@@ -23,18 +16,17 @@ export const ProductCards = ({ products }: { products: PetProduct[] }) => {
   };
 
   const allProducts = products?.map((product, index) => (
-    <Anchor 
-      component={Link} 
-      href={{pathname: '/product', query: {productId: product._id}}}
-    >
+    <Anchor
+      component={Link}
+      href={{ pathname: `/product/${product._id}` }}
+      key={index}>
       <Card
-        w={'350'}
+        w={{ base: 250, xs: 300 }}
         shadow="sm"
         m={30}
         padding="lg"
         radius="md"
         withBorder
-        key={index}
         ref={(ref) => (cardRefs.current[index] = ref)}
         onMouseEnter={() => handleMouseEnter(index)}
         onMouseLeave={handleMouseLeave}
@@ -59,7 +51,7 @@ export const ProductCards = ({ products }: { products: PetProduct[] }) => {
           </Text>
         </Group>
 
-        <Text size="sm" c="dimmed">
+        <Text size="sm" c="rgb(86 97 103)">
           ${product.currentPrice}
         </Text>
       </Card>
