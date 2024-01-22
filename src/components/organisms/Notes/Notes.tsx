@@ -98,8 +98,11 @@ export function Notes() {
 
   return (
     <ScrollArea>
-      <Button fullWidth onClick={open}>Add Notes</Button>
+      <Button fullWidth onClick={open}>
+        Add Notes
+      </Button>
       <Modal
+        closeButtonProps={{ 'aria-label': 'Close modal' }}
         opened={opened}
         onClose={() => {
           close();
