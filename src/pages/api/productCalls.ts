@@ -3,7 +3,7 @@ const postProduct = async (productUrl: string) => {
     const res = await fetch(`http://localhost:8080/api/v1/products/create`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-       body: JSON.stringify({productUrl})
+      body: JSON.stringify({productUrl})
     })
     if (!res.ok) {
       throw new Error (`${res.status}: Failed to post product link`)
@@ -37,6 +37,7 @@ const getProductById = async (productId: string) => {
     throw new Error(`${(error as Error).message}: Failed in get product by id catch block`)
   }
 }
+
 export {
   postProduct, 
   getAllProducts,

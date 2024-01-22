@@ -6,27 +6,39 @@ import {
   Container,
   Group,
   Image,
-  SimpleGrid,
   Stack,
   Text,
-  Title
+  Title,
+  Loader,
+  Flex,
+  Grid
 } from '@mantine/core';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import {
+  IconCash,
+  IconGraph,
+  IconTrendingDown,
+  IconTrendingUp
+} from '@tabler/icons-react';
 
-export const Product = () => {
+const Product = () => {
   const router = useRouter();
   const { id } = router.query;
   const [product, setProduct] = useState<PetProduct | null>(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     const getProduct = async () => {
       try {
         const selectedProduct = await getProductById(id as string);
         setProduct(selectedProduct.product);
+        setLoading(false);
       } catch (error) {
         console.log(error);
+        setLoading(false);
       }
     };
     getProduct();
@@ -36,7 +48,11 @@ export const Product = () => {
     <Text key={index}>{info}</Text>
   ));
 
-  return (
+  return loading ? (
+    <Flex pt={16} justify={'center'}>
+      <Loader color="rgba(61, 55, 55, 1)" size="xl" type="dots" />
+    </Flex>
+  ) : product ? (
     <>
       <Head>
         <title>Thrifty Pet</title>
@@ -68,66 +84,94 @@ export const Product = () => {
             </Anchor>
           </Stack>
         </Group>
-        <SimpleGrid
-          py={48}
-          style={{ justifyItems: 'center' }}
-          cols={{ base: 1, xs: 2 }}
-          spacing={{ base: 10, xs: 'lg' }}
-          verticalSpacing={{ base: 'md', sm: 'xl' }}>
-          <div>
+        <Grid py={48} justify="center">
+          <Grid.Col span={{ base: 12, sm: 10, md: 8, lg: 6 }}>
             <Container
               py={28}
-              px={48}
-              style={{ borderRadius: 8 }}
+              px={45}
+              style={{ borderRadius: 8, justifyContent: 'center' }}
               size="responsive"
               c="white"
               bg={'rgba(33, 30, 30, 0.96)'}>
-              {product?.averagePrice === 0 ? (
-                <Text>Average Price: n/a </Text>
-              ) : (
-                <Text>Average Price: ${product?.averagePrice}</Text>
-              )}
+              <Flex justify={'center'}>
+                <Group>
+                  <IconGraph />
+                  {product?.averagePrice === 0 ? (
+                    <Text>Average Price: n/a </Text>
+                  ) : (
+                    <Text>Average Price: ${product?.averagePrice}</Text>
+                  )}
+                </Group>
+              </Flex>
             </Container>
-          </div>
-          <div>
+          </Grid.Col>
+          <Grid.Col span={{ base: 12, sm: 10, md: 8, lg: 6 }}>
             <Container
               p={28}
-              px={48}
+              px={45}
               style={{ borderRadius: 8 }}
               size="responsive"
               c="white"
               bg={'rgba(33, 30, 30, 0.96)'}>
-              {product?.originalPrice === null ? (
-                <Text>Original Price: ${product?.currentPrice}</Text>
-              ) : (
-                <Text>Original Price: ${product?.originalPrice}</Text>
-              )}
+              <Flex justify={'center'}>
+                <Group>
+                  <IconCash />
+                  {product?.originalPrice === null ? (
+                    <Text>Original Price: ${product?.currentPrice}</Text>
+                  ) : (
+                    <Text>Original Price: ${product?.originalPrice}</Text>
+                  )}
+                </Group>
+              </Flex>
             </Container>
-          </div>
-          <div>
+          </Grid.Col>
+          <Grid.Col span={{ base: 12, sm: 10, md: 8, lg: 6 }}>
             <Container
               p={28}
-              px={48}
+              px={45}
               style={{ borderRadius: 8 }}
               size="responsive"
               c="white"
               bg={'rgba(33, 30, 30, 0.96)'}>
-              <Text>Lowest Price: ${product?.lowestPrice}</Text>
+              <Flex justify={'center'}>
+                <Group>
+                  <IconTrendingDown />
+                  <Text>Lowest Price: ${product?.lowestPrice}</Text>
+                </Group>
+              </Flex>
             </Container>
-          </div>
-          <div>
+          </Grid.Col>
+          <Grid.Col span={{ base: 12, sm: 10, md: 8, lg: 6 }}>
             <Container
               p={28}
-              px={48}
+              px={45}
               style={{ borderRadius: 8 }}
               size="responsive"
               c="white"
               bg={'rgba(33, 30, 30, 0.96)'}>
-              <Text>Highest Price: ${product?.highestPrice}</Text>
+              <Flex justify={'center'}>
+                <Group>
+                  <IconTrendingUp />
+                  <Text>Highest Price: ${product?.highestPrice}</Text>
+                </Group>
+              </Flex>
             </Container>
-          </div>
-        </SimpleGrid>
+          </Grid.Col>
+        </Grid>
       </Container>
+    </>
+  ) : (
+    <>
+      <Group p={16} justify="center">
+        <Text>Opps, Nothing to See Here. Please try again!</Text>
+      </Group>
+      <Image
+        src={'/assets/error.jpg'}
+        alt="a cat starting at a dog"
+        width={300}
+        height={400}
+        style={{ objectFit: 'contain' }}
+      />
     </>
   );
 };

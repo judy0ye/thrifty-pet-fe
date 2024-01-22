@@ -1,7 +1,8 @@
 import { postProduct } from '@/pages/api/productCalls';
 import {
+  Container,
   Flex,
-  Group,
+  InputLabel,
   Loader,
   Text,
   TextInput,
@@ -84,12 +85,16 @@ export const Search = ({ addProduct }: SearchTypes) => {
           mx={{ base: '1.6rem', sm: '1.5rem' }}
           pb={{ base: 16, sm: 0 }}
           h={'100%'}>
-          <Group>
+          <Container m={0} p={0}>
+            <InputLabel htmlFor="chewy-link">
+              Enter a Chewy product link and check back periodically to see its
+              price ranges
+            </InputLabel>
             <TextInput
               size="md"
               w={{ base: '100%', xs: '28rem', sm: '26.2rem', md: '35rem' }}
               placeholder="Enter Chewy Link Here"
-              label="Enter a Chewy product link to see its price ranges"
+              id="chewy-link"
               aria-label="Enter Chewy Link Here"
               rightSection={
                 <UnstyledButton aria-label="search" type="submit">
@@ -99,7 +104,7 @@ export const Search = ({ addProduct }: SearchTypes) => {
               value={searchInput !== null ? searchInput : ''}
               onChange={handleChange}
             />
-          </Group>
+          </Container>
         </Flex>
       </form>
     </>

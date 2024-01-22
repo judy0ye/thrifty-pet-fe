@@ -43,7 +43,7 @@ export const CarouselHero = () => {
           className={classes.carouselImage}
           src={image.img}
           alt={image.alt}
-          width={900}
+          width={800}
           height={450}
           style={{ objectFit: 'contain' }}
         />
