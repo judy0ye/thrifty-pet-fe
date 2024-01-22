@@ -1,0 +1,76 @@
+{
+  "products": [
+      {
+          "_id": "65ae0d908f2c18264d587084",
+          "url": "https://www.chewy.com/weruva-mack-jack-mackerel-grilled/dp/34484",
+          "image": "https://image.chewy.com/is/image/catalog/49303_MAIN._AC_SL600_V1643071023_.jpg",
+          "title": "Weruva Mack & Jack with Mackerel & Grilled Skipjack Grain-Free Canned Cat Food",
+          "currentPrice": 39.84,
+          "originalPrice": 42.96,
+          "miscInfo": [
+              "Flavor: Mack and Jack",
+              "Size: 3-oz can, case of 24"
+          ],
+          "priceHistory": [
+              {
+                  "price": 39.84,
+                  "date": "2024-01-22T06:39:12.458Z",
+                  "_id": "65ae0d908f2c18264d587085"
+              }
+          ],
+          "lowestPrice": 39.84,
+          "highestPrice": 39.84,
+          "averagePrice": 0,
+          "createdAt": "2024-01-22T06:39:12.749Z",
+          "updatedAt": "2024-01-22T06:39:12.749Z"
+      },
+      {
+          "_id": "65ae0dce8f2c18264d587090",
+          "url": "https://www.chewy.com/weruva-amazon-livin-chicken-breast/dp/34494",
+          "image": "https://image.chewy.com/is/image/catalog/49313_MAIN._AC_SL600_V1666651991_.jpg",
+          "title": "Weruva Amazon Livin' with Chicken Breast & Chicken Liver in Gravy Cat Food",
+          "currentPrice": 39.84,
+          "originalPrice": 42.96,
+          "miscInfo": [
+              "Flavor: Amazon Livin",
+              "Size: 3-oz can, case of 24"
+          ],
+          "priceHistory": [
+              {
+                  "price": 39.84,
+                  "date": "2024-01-22T06:40:14.484Z",
+                  "_id": "65ae0dce8f2c18264d587091"
+              }
+          ],
+          "lowestPrice": 39.84,
+          "highestPrice": 39.84,
+          "averagePrice": 0,
+          "createdAt": "2024-01-22T06:40:14.623Z",
+          "updatedAt": "2024-01-22T06:40:14.623Z"
+      },
+      {
+          "_id": "65ae0ef68f2c18264d5870de",
+          "url": "https://www.chewy.com/revolution-plus-topical-solution-cats/dp/185730",
+          "image": "https://image.chewy.com/is/image/catalog/158995_MAIN._AC_SL600_V1549053720_.jpg",
+          "title": "Revolution Plus Topical Solution for Cats, 5.6-11 lbs, (Orange Box)",
+          "currentPrice": 144.98,
+          "originalPrice": null,
+          "miscInfo": [
+              "Pet Weight: 5.6-11 lbs",
+              "Count: 6 Doses (6-mos. supply)"
+          ],
+          "priceHistory": [
+              {
+                  "price": 144.98,
+                  "date": "2024-01-22T06:45:10.571Z",
+                  "_id": "65ae0ef68f2c18264d5870df"
+              }
+          ],
+          "lowestPrice": 144.98,
+          "highestPrice": 144.98,
+          "averagePrice": 0,
+          "createdAt": "2024-01-22T06:45:10.841Z",
+          "updatedAt": "2024-01-22T06:45:10.841Z"
+      }
+  ]
+}

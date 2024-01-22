@@ -9,7 +9,7 @@ const images = [
   {
     img: '/assets/dog-cat.jpeg',
     blur: './assets/dog-cat-low-quality.jpg',
-    alt: 'dog and cat'
+    alt: 'dog-and-cat'
   },
   {
     img: '/assets/bunny.jpg',
@@ -19,12 +19,12 @@ const images = [
   {
     img: '/assets/guinea-pig.jpeg',
     blur: './assets/guinea-pig-low-quality.jpg',
-    alt: 'guinea_pig'
+    alt: 'guinea-pig'
   },
   {
     img: '/assets/food.jpeg',
     blur: './assets/food-low-quality.jpg',
-    alt: 'dry pet food'
+    alt: 'dry-pet-food'
   }
 ];
 

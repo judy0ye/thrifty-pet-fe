@@ -1,0 +1,14 @@
+{
+  "notes": [
+      {
+          "_id": "65a33343c4c8e2bc346d40eb",
+          "product": "chicken hearts",
+          "description": "my cat loves them"
+      },
+      {
+          "_id": "65a334f07820f19fb447d75e",
+          "product": "snacks with rabbit",
+          "description": "makes my cat puke like no tomorrow"
+      }
+  ]
+}
