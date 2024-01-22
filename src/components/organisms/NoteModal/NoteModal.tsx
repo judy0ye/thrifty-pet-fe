@@ -31,7 +31,7 @@ export const NoteModal = ({
   });
   const [editClicked, setEditClicked] = useState(false);
   const [alert, setAlert] = useState<string | null>(null);
-  console.log({selectedNote})
+  console.log({ selectedNote });
   const isFormIncomplete = () => {
     return Object.values(editedNote).some((input) => input === '');
   };
@@ -40,7 +40,7 @@ export const NoteModal = ({
     try {
       if (isFormIncomplete()) {
         setAlert('Please fill out all input fields');
-      } else { 
+      } else {
         await patchNote(noteId, updatedNote);
         const updatedNotes = (notes ?? []).map((note) => {
           if (note._id === noteId) {
@@ -50,7 +50,7 @@ export const NoteModal = ({
             return note;
           }
         });
- 
+
         setNotes(updatedNotes);
         setEditClicked(false);
       }
@@ -114,6 +114,7 @@ export const NoteModal = ({
             <Menu>
               <Menu.Target>
                 <Button
+                  aria-label="menu dropdown"
                   variant="default"
                   size="compact-sm"
                   style={{ border: 'none' }}>
@@ -140,7 +141,7 @@ export const NoteModal = ({
                 </Menu.Item>
               </Menu.Dropdown>
             </Menu>
-            <Modal.CloseButton />
+            <Modal.CloseButton aria-label="Close Modal" />
           </Flex>
         </Modal.Header>
         <Modal.Body>
