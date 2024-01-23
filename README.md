@@ -10,7 +10,7 @@
 </div>
 
 ## 📝 Description
-Want to buy Chewy products for your pet at the lowest price? You can keep track of them here! Just copy and paste a Chewy product link in the search bar and it will periodically gather data and show you the highest, lowest, and average price for the product.
+Want to buy Chewy products for your pet at the lowest price? You can keep track of them here! Just copy and paste a Chewy product link in the search bar and it will periodically gather data and show you the highest, lowest, and average price for the product. You can also view, add, edit, and delete notes about the products on the sidebar.
 
 ## 🧑‍💻 Installation Instructions
 
