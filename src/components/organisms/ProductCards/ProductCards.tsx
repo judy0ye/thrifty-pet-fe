@@ -1,6 +1,6 @@
 import { Anchor, Card, Flex, Group, Image, Text } from '@mantine/core';
 import Link from 'next/link';
-import { PetProduct } from '@/pages/types';
+import { PetProduct } from '../../../../types';
 import { useRef, useState } from 'react';
 
 export const ProductCards = ({ products }: { products: PetProduct[] }) => {

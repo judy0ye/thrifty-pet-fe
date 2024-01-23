@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Container } from '@mantine/core'
 import ProductCards from '@/components/organisms/ProductCards'
-import { PetProduct } from './types'
+import { PetProduct } from '../../types'
 
 const Home = ({products}: {products: PetProduct[]}) => {
   return (

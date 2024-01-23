@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import ProductLayout from '@/components/templates/ProductLayout';
 import { useEffect, useState } from 'react';
 import { getAllProducts } from './api/productCalls';
-import { LayoutSwitcherType, PetProduct } from './types';
+import { LayoutSwitcherType, PetProduct } from '../../types';
 
 const theme = createTheme({
   components: {

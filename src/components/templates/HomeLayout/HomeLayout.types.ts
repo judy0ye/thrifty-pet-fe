@@ -1,4 +1,4 @@
-import { PetProduct } from "@/pages/types";
+import { PetProduct } from "../../../../types";
 import { ReactNode } from "react";
 
 export interface HomeLayoutTypes {
