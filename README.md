@@ -27,13 +27,14 @@ npm install
 # Run the start script
 npm run dev
 ```
+Follow installation instructions for the [backend repo](https://github.com/judy0ye/thrifty-pet-be)
 
 ## 📸 Screenshots
 <details open>
   <summary> ⚙️ Functionality </summary>
   
   | Description | Screenshot |
-  |------------ | -----------|
+  |-------------- | -------------|
   | <h3 align="center">Landing Page| ![thrifty-pet](https://github.com/judy0ye/thrifty-pet-fe/assets/129805348/14aee579-ae75-4258-99fb-aec55fde093f)
   | <h3 align="center">Responsiveness| ![thrifty-pet-responsiveness](https://github.com/judy0ye/thrifty-pet-fe/assets/129805348/b6ae30dd-23f9-43de-b5e8-e1a94dba29ff)
 
