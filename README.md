@@ -16,7 +16,7 @@ Want to buy Chewy products for your pet at the lowest price? You can keep track 
 
 ```bash
 # Clone this repo to your local machine by running:
-git clone git@github.com:your_github_username/thrifty-pet-fe.git
+git clone git@github.com:judy0ye/thrifty-pet-fe.git
 
 # Cd into the root directory 
 cd thrifty-pet-fe
