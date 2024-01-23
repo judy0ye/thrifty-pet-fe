@@ -1,6 +1,6 @@
 async function fetchAllNotes() {
   try {
-    const res = await fetch('https://thrifty-pet-be.vercel.app/api/v1/notes/get')
+    const res = await fetch('https://thrifty-pet-be-4c9efd8c099d.herokuapp.com/api/v1/notes/get')
     if (!res.ok) {
       throw new Error(`${res.status}: Failed to fetch notes`)
     }
@@ -12,7 +12,7 @@ async function fetchAllNotes() {
 
 async function postNote(note: object) {
   try {
-    const res = await fetch('https://thrifty-pet-be.vercel.app/api/v1/notes/create', {
+    const res = await fetch('https://thrifty-pet-be-4c9efd8c099d.herokuapp.com/api/v1/notes/create', {
       method: 'POST', 
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(note)
@@ -28,7 +28,7 @@ async function postNote(note: object) {
 
 async function deletePost(noteId: string) {
   try {
-    const res = await fetch(`https://thrifty-pet-be.vercel.app/api/v1/notes/delete/${noteId}`, {
+    const res = await fetch(`https://thrifty-pet-be-4c9efd8c099d.herokuapp.com/api/v1/notes/delete/${noteId}`, {
       method: 'DELETE',
       headers: {'Content-Type': 'application/json'}
     })
@@ -43,7 +43,7 @@ async function deletePost(noteId: string) {
 
 async function patchNote(noteId: string, noteToUpdate: object) {
   try {
-    const res = await fetch(`https://thrifty-pet-be.vercel.app/api/v1/notes/update/${noteId}`, {
+    const res = await fetch(`https://thrifty-pet-be-4c9efd8c099d.herokuapp.com/api/v1/notes/update/${noteId}`, {
       method: "PATCH",
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(noteToUpdate)

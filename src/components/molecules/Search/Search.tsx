@@ -42,7 +42,7 @@ export const Search = ({ addProduct }: SearchTypes) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('clicked in add product');
+
     if (searchInput !== null) {
       addProductToDisplay(searchInput);
       setSearchInput(null);

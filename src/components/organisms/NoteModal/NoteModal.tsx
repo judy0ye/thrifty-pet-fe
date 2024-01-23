@@ -31,7 +31,7 @@ export const NoteModal = ({
   });
   const [editClicked, setEditClicked] = useState(false);
   const [alert, setAlert] = useState<string | null>(null);
-  console.log({ selectedNote });
+
   const isFormIncomplete = () => {
     return Object.values(editedNote).some((input) => input === '');
   };
