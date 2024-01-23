@@ -35,8 +35,10 @@ Follow installation instructions for the [backend repo](https://github.com/judy0
   
   | Description | Screenshot |
   |------------ | -----------|
-  | <h3 align="center">Landing Page| ![thrifty-pet-large](https://github.com/judy0ye/thrifty-pet-fe/assets/129805348/b735ac95-272d-4825-b4c9-d3626a99ff61)
-  | <h3 align="center">Responsiveness| ![thrifty-pet-responsiveness-large](https://github.com/judy0ye/thrifty-pet-fe/assets/129805348/e050b141-851b-4b82-8a57-10c0b8b4b466)
+  | <h3 align="center">Landing Page | ![thrifty-pet-cropped](https://github.com/judy0ye/thrifty-pet-fe/assets/129805348/895f1be8-b479-4eaa-9c12-0ebc75a76126)
+  | <h3 align="center">Responsiveness| ![thrify-pet-responsiveness-cropped](https://github.com/judy0ye/thrifty-pet-fe/assets/129805348/73260624-381f-41aa-aaa0-1147cae4ee83)
+
+
 
 
 
