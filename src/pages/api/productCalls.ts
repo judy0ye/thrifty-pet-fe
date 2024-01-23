@@ -1,6 +1,6 @@
 const postProduct = async (productUrl: string) => {
   try {
-    const res = await fetch(`http://localhost:8080/api/v1/products/create`, {
+    const res = await fetch(`https://thrifty-pet-be.vercel.app/api/v1/products/create`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({productUrl})
@@ -16,7 +16,7 @@ const postProduct = async (productUrl: string) => {
 
 const getAllProducts = async () => {
   try {
-    const res = await fetch('http://localhost:8080/api/v1/products/get')
+    const res = await fetch('https://thrifty-pet-be.vercel.app/api/v1/products/get')
     if (!res.ok) {
       throw new Error (`${res.status}: Failed to get all products`)
     }
@@ -28,7 +28,7 @@ const getAllProducts = async () => {
 
 const getProductById = async (productId: string) => {
   try {
-    const res = await fetch(`http://localhost:8080/api/v1/products/get/${productId}`)
+    const res = await fetch(`https://thrifty-pet-be.vercel.app/api/v1/products/get/${productId}`)
     if (!res.ok) {
       throw new Error (`${res.status}: Failed to get product by id`)
     }
