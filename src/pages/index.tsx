@@ -8,7 +8,7 @@ const Home = ({products}: {products: PetProduct[]}) => {
     <>
       <Head>
         <title>Thrifty Pet</title>
-        <meta name="description" content="Track pet food prices from Chewy" />
+        <meta name="description" content="Track pet product prices from Chewy" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
