@@ -73,7 +73,7 @@ const Product = () => {
             </Title>
             {miscInfo}
             <Badge size="xl" autoContrast color={'#d81111'}>
-              <Text>Current Price: ${product?.currentPrice}</Text>
+              <Text>Current Price: ${product?.currentPrice.toFixed(2)}</Text>
             </Badge>
             <Anchor
               target="_blank"
@@ -99,7 +99,7 @@ const Product = () => {
                   {product?.averagePrice === 0 ? (
                     <Text>Average Price: n/a </Text>
                   ) : (
-                    <Text>Average Price: ${product?.averagePrice}</Text>
+                    <Text>Average Price: ${product?.averagePrice?.toFixed(2)}</Text>
                   )}
                 </Group>
               </Flex>
@@ -117,9 +117,9 @@ const Product = () => {
                 <Group>
                   <IconCash />
                   {product?.originalPrice === null ? (
-                    <Text>Original Price: ${product?.currentPrice}</Text>
+                    <Text>Original Price: ${product?.currentPrice.toFixed(2)}</Text>
                   ) : (
-                    <Text>Original Price: ${product?.originalPrice}</Text>
+                    <Text>Original Price: ${product?.originalPrice?.toFixed(2)}</Text>
                   )}
                 </Group>
               </Flex>
@@ -136,7 +136,7 @@ const Product = () => {
               <Flex justify={'center'}>
                 <Group>
                   <IconTrendingDown />
-                  <Text>Lowest Price: ${product?.lowestPrice}</Text>
+                  <Text>Lowest Price: ${product?.lowestPrice?.toFixed(2)}</Text>
                 </Group>
               </Flex>
             </Container>
@@ -152,7 +152,7 @@ const Product = () => {
               <Flex justify={'center'}>
                 <Group>
                   <IconTrendingUp />
-                  <Text>Highest Price: ${product?.highestPrice}</Text>
+                  <Text>Highest Price: ${product?.highestPrice?.toFixed(2)}</Text>
                 </Group>
               </Flex>
             </Container>
