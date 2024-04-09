@@ -52,7 +52,7 @@ export const ProductCards = ({ products }: { products: PetProduct[] }) => {
         </Group>
 
         <Text size="sm" c="rgb(86 97 103)">
-          ${product.currentPrice}
+          ${product.currentPrice.toFixed(2)}
         </Text>
       </Card>
     </Anchor>
