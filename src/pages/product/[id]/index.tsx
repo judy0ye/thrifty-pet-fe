@@ -1,5 +1,5 @@
 import { getProductById } from '@/pages/api/productCalls';
-import { PetProduct } from '../../../../types';
+import { PetProduct } from '../../../types';
 import {
   Anchor,
   Badge,
