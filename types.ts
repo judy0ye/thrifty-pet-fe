@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface PriceHistoryItem {
   price: number;
   date: Date;
@@ -21,6 +23,6 @@ export interface PetProduct {
 }
 
 export interface LayoutSwitcherType {
-  children: React.ReactNode;
+  children: ReactNode;
   addProduct: (newProduct: PetProduct) => void;
 }
