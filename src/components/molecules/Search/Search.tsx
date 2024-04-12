@@ -17,11 +17,6 @@ export const Search = ({ addProduct }: SearchTypes) => {
   const [searchInput, setSearchInput] = useState<string | null>(null);
   const [alert, setAlert] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const icon = (
-    <IconSearch
-      style={{ width: rem(19), height: rem(19), marginTop: rem(5) }}
-    />
-  );
 
   const isValidProduct = (url: string) => {
     try {
@@ -98,7 +93,9 @@ export const Search = ({ addProduct }: SearchTypes) => {
               aria-label="Enter Chewy Link Here"
               rightSection={
                 <UnstyledButton aria-label="search" type="submit">
-                  {icon}
+                  <IconSearch
+                    style={{ width: rem(19), height: rem(19), marginTop: rem(5) }}
+                  />
                 </UnstyledButton>
               }
               value={searchInput !== null ? searchInput : ''}
